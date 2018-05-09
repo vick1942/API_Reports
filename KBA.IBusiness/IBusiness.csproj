@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\KBA.Business.Entities\Business.Entities.csproj" />
+    <ProjectReference Include="..\KBA.Repository.Entities\Repository.Entities.csproj" />
+  </ItemGroup>
+
+</Project>
