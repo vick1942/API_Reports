@@ -28,4 +28,4 @@ Adding most of the above functionalities in a similar way except 5th point
 
 10) Reading connection string and app setting values from appsettings.json  
 
-NOTE:  Multiple Resultsets and Connection string swapping does not support Entity Framework Core 2.0.1. So we tried this approach in Entity 6.2.0
+NOTE:  Multiple Resultsets and Database Connection swapping does not support Entity Framework Core 2.0.1. So we tried this approach in Entity 6.2.0
