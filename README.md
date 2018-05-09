@@ -1,11 +1,15 @@
 # API_Reports
-Call an API in ASP.NET Framework with Entity framework using sproc in a different way.
+
+There are two project branches in the App. Master branch is in Asp.Net Framework and Feature/Asp.NetCore_API is in Asp.Net Core 2.0 .NET Framework
+
+The functionlity of both the solution is similar which would Call an API in using Entity framework with sproc in a different way.
 
 The primary purpose of this project is to call an API and display the respone in JSON format by querying the SQL database tables.
 
 Functionalities and High level info that are achieved in the proj are as follows:-
 
-Technology Used: Asp.Net 4.7.1 Framework, SQL, EntityFramework 6.2
+MASTER BRANCH:-
+Technology Used: Asp.Net 4.6.1 Framework, SQL, EntityFramework 6.2
 
 1) Implemented dependency injection by using Unity Container
 2) Implemented Areas for differenct API's 
@@ -18,4 +22,10 @@ Check out the Repository for more updates
 8) Performed API Call operation fetch Multiple ResultSets using a Stored Procedure. See EmployerReportRepository.cs 
 9) Connect to the Database based without EDMX and without stating Connection.OpenAsync(). See GroupRepository.cs and SettingsDBContext
 
+FEATURE/ASp.NetCore_Api BRANCH:- 
 
+Adding most of the above functionalities in a similar way except 5th point
+
+10) Reading connection string and app setting values from appsettings.json  
+
+NOTE:  Multiple Resultsets and Connection string swapping does not support Entity Framework Core 2.0.1. So we tried this approach in Entity 6.2.0
