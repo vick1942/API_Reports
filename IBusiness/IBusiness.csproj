@@ -5,8 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\KBA.Business.Entities\Business.Entities.csproj" />
-    <ProjectReference Include="..\KBA.Repository.Entities\Repository.Entities.csproj" />
+    <ProjectReference Include="..\Business.Entities\Business.Entities.csproj" />
+    <ProjectReference Include="..\Repository.Entities\Repository.Entities.csproj" />
   </ItemGroup>
 
 </Project>

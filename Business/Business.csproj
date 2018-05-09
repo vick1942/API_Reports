@@ -9,9 +9,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\KBA.IBusiness\IBusiness.csproj" />
-    <ProjectReference Include="..\KBA.IRepository\IRepository.csproj" />
-    <ProjectReference Include="..\KBA.Repository\Repository.csproj" />
+    <ProjectReference Include="..\Business.Entities\Business.Entities.csproj" />
+    <ProjectReference Include="..\IBusiness\IBusiness.csproj" />
+    <ProjectReference Include="..\IRepository\IRepository.csproj" />
+	<ProjectReference Include="..\Repository.Entities\Repository.Entities.csproj" />
   </ItemGroup>
 
 </Project>

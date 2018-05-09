@@ -192,23 +192,23 @@
     <Folder Include="Areas\Reports\Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\KBA.Business.Entities\Business.Entities.csproj">
+    <ProjectReference Include="..\Business.Entities\Business.Entities.csproj">
       <Project>{49E2778D-E317-4763-8223-E5633887E1BE}</Project>
       <Name>Business.Entities</Name>
     </ProjectReference>
-    <ProjectReference Include="..\KBA.Business\Business.csproj">
+    <ProjectReference Include="..\Business\Business.csproj">
       <Project>{25544C09-30C8-449E-B8D4-4EDE867FAA37}</Project>
       <Name>Business</Name>
     </ProjectReference>
-    <ProjectReference Include="..\KBA.IBusiness\IBusiness.csproj">
+    <ProjectReference Include="..\IBusiness\IBusiness.csproj">
       <Project>{CE707B25-0282-4AC5-84A4-AAA46FDA289B}</Project>
       <Name>IBusiness</Name>
     </ProjectReference>
-    <ProjectReference Include="..\KBA.IRepository\IRepository.csproj">
+    <ProjectReference Include="..\IRepository\IRepository.csproj">
       <Project>{905C0E21-303C-4273-8BBA-562B2A3A2047}</Project>
       <Name>IRepository</Name>
     </ProjectReference>
-    <ProjectReference Include="..\KBA.Repository\Repository.csproj">
+    <ProjectReference Include="..\Repository\Repository.csproj">
       <Project>{D17F19EF-9769-4306-A954-86FFE0327067}</Project>
       <Name>Repository</Name>
     </ProjectReference>

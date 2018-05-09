@@ -3,7 +3,6 @@ using Common;
 using IRepository;
 using Repository.Entities;
 using Utilities.Mapper;
-using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -14,7 +13,6 @@ namespace Repository
 {
     public class GroupRepository : IGroupRepository
     {
-        private readonly IOptions<SqlStoreProcedureKeys> _sqlStoreProcedureKeys;
         private SettingsDBContext dbConnection;
 
         public GroupRepository()

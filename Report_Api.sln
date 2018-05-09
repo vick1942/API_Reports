@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IRepository", "KBA.IRepository\IRepository.csproj", "{905C0E21-303C-4273-8BBA-562B2A3A2047}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IRepository", "IRepository\IRepository.csproj", "{905C0E21-303C-4273-8BBA-562B2A3A2047}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business", "KBA.Business\Business.csproj", "{25544C09-30C8-449E-B8D4-4EDE867FAA37}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business", "Business\Business.csproj", "{25544C09-30C8-449E-B8D4-4EDE867FAA37}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IBusiness", "KBA.IBusiness\IBusiness.csproj", "{CE707B25-0282-4AC5-84A4-AAA46FDA289B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IBusiness", "IBusiness\IBusiness.csproj", "{CE707B25-0282-4AC5-84A4-AAA46FDA289B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{B7A417CE-8F3A-4C15-9BC6-769FBB05859C}"
 EndProject
@@ -17,15 +17,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{22
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{692CF44A-B17D-45D6-99B6-FF8C54CC2478}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KBA.Common", "KBA.Common\KBA.Common.csproj", "{B48E4673-4F4E-47C8-BD77-525E40AEA20B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "Common\Common.csproj", "{B48E4673-4F4E-47C8-BD77-525E40AEA20B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository.Entities", "KBA.Repository.Entities\Repository.Entities.csproj", "{7F953E60-61C9-47DF-B043-0E658A6C692C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository.Entities", "Repository.Entities\Repository.Entities.csproj", "{7F953E60-61C9-47DF-B043-0E658A6C692C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business.Entities", "KBA.Business.Entities\Business.Entities.csproj", "{49E2778D-E317-4763-8223-E5633887E1BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business.Entities", "Business.Entities\Business.Entities.csproj", "{49E2778D-E317-4763-8223-E5633887E1BE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository", "KBA.Repository\Repository.csproj", "{D17F19EF-9769-4306-A954-86FFE0327067}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository", "Repository\Repository.csproj", "{D17F19EF-9769-4306-A954-86FFE0327067}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Report.Api", "KBA.Report.Api\Report.Api.csproj", "{1F9FFAA0-9DAD-4F75-A6F3-3B206432F593}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Report.Api", "Report.Api\Report.Api.csproj", "{1F9FFAA0-9DAD-4F75-A6F3-3B206432F593}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
