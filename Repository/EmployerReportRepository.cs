@@ -12,16 +12,19 @@ using System.Data.Entity.Infrastructure;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Options;
 
 namespace Repository
 {
     public class EmployerReportRepository : IEmployerReportRepository
     {
+        private readonly IOptions<SqlStoreProcedureKeys> _sqlStoreProcedureKeys;
         private SettingsDBContext dbConnection;
 
-        public EmployerReportRepository()
+        public EmployerReportRepository(IOptions<SqlStoreProcedureKeys> sqlStoreProcedureKeys)
         {
-            dbConnection = new SettingsDBContext("name=" + Constants.SqlConnectionString);
+            _sqlStoreProcedureKeys = sqlStoreProcedureKeys;
+            dbConnection = new SettingsDBContext(_sqlStoreProcedureKeys.Value.SqlConnectionString);
         }
 
         public async Task<EmployerReportEntity> GetEmployerReportList(string groupNum, DateTime periodBegin, DateTime periodEnd)
@@ -34,7 +37,7 @@ namespace Repository
                         await connection.OpenAsync();
 
                     DbCommand command = connection.CreateCommand();
-                    command.CommandText = Constants.EXEC + ConfigurationManager.AppSettings["PrsSchema"] + Constants.DOT + ConfigurationManager.AppSettings["GetEmployerReport"] +
+                    command.CommandText = Constants.EXEC + _sqlStoreProcedureKeys.Value.PrsSchema + Constants.DOT + _sqlStoreProcedureKeys.Value.GetEmployerReport +
                                             Constants.SPACE + Constants.Group_NUM + Constants.COMMA + Constants.PERIOD_BEGIN + Constants.COMMA + Constants.PERIOD_END;
 
                     command.Parameters.AddRange(new[]

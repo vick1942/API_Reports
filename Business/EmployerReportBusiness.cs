@@ -9,11 +9,10 @@ namespace Business
     public class EmployerReportBusiness : IEmployerReportBusiness
     {
         public readonly IEmployerReportRepository _employerReportRepository;
-
-
-        public EmployerReportBusiness(IEmployerReportRepository em)
+        public EmployerReportBusiness(IEmployerReportRepository EmployerReportRepository)
         {
-            _employerReportRepository = em;
+            if (Equals(_employerReportRepository, null))
+                _employerReportRepository = EmployerReportRepository;
         }
         public async Task<EmployerReportEntity> GetEmployerReportList(string groupNum, DateTime periodBegin, DateTime periodEnd)
         {

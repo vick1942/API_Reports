@@ -6,17 +6,16 @@ using System.Threading.Tasks;
 
 namespace Business
 {
-    public class GroupBusiness :  IGroupBusiness
+    public class GroupBusiness : IGroupBusiness
     {
         public readonly IGroupRepository _groupRepository;
-
-        public GroupBusiness(IGroupRepository gr)
+        public GroupBusiness(IGroupRepository groupRepository)
         {
-            _groupRepository = gr;
+            _groupRepository = groupRepository;
         }
         public async Task<List<GroupEntity>> GetDistinctGroups()
         {
-                return await _groupRepository.GetDistinctGroups();
+            return await _groupRepository.GetDistinctGroups();
         }
     }
 }
